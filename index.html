@@ -45,6 +45,38 @@
     
         <article class="post article-entry">
             <div class="post-title">
+                <a class="post-title-link text-underline" href="/2023/04/01/blog/">个人博客搭建总结报告</a>
+            </div>
+            <p class="sub">Apr 01 2023</p>
+            <div class="post-content">
+                
+                    <h2 id="主题及其选取原因"><a href="#主题及其选取原因" class="headerlink" title="主题及其选取原因"></a>主题及其选取原因</h2><p>框架：Hexo<br>主题：<a target="_blank" rel="noopener" href="https://github.com/zjx137/hexo-theme-Tsu">Tsu</a><br>选择原因：结合个人对简洁页面的喜好以及综合实现难易程度</p>
+<h2 id="页面布局及其设计思路"><a href="#页面布局及其设计思路" class="headerlink" title="页面布局及其设计思路"></a>页面布局及其设计思路</h2><p>以简洁明了为中心，分为Home、Archives、About三部分，具体来说：</p>
+<h3 id="Home"><a href="#Home" class="headerlink" title="Home"></a>Home</h3><p>呈现所有博客内容，包括多项曾经发表的论文以及现在的工作记录<br>右边栏是个人形象照以及联系方式等的概要展示<br>还包括各篇博客Tags的总结</p>
+<h3 id="Archives"><a href="#Archives" class="headerlink" title="Archives"></a>Archives</h3><h2 id="功能实现及其技术选择"><a href="#功能实现及其技术选择" class="headerlink" title="功能实现及其技术选择"></a>功能实现及其技术选择</h2><p>功能实现</p>
+<p>1、使用ejs模板语言，用Javascript代码生成HTML页面。语法简单，执行迅速，易于调试。<br>2、使用CSS 对网页中元素位置的排版进行像素级精确控制，其支持几乎所有的字体字号样式，拥有对网页对象和模型样式编辑的能力。</p>
+<h2 id="样式设计及其美学考量"><a href="#样式设计及其美学考量" class="headerlink" title="样式设计及其美学考量"></a>样式设计及其美学考量</h2><h2 id="制作过程中遇到的问题及其解决方法"><a href="#制作过程中遇到的问题及其解决方法" class="headerlink" title="制作过程中遇到的问题及其解决方法"></a>制作过程中遇到的问题及其解决方法</h2><h3 id="搭建步骤"><a href="#搭建步骤" class="headerlink" title="搭建步骤"></a>搭建步骤</h3><p>·GitHub创建个人仓库<br>·安装Git<br>·安装Node.js<br>·安装Hexo<br>·更换主题<br>·初识MarkDown语法<br>·发布文章<br>·个性化设置</p>
+<h3 id="问题-amp-解决方案"><a href="#问题-amp-解决方案" class="headerlink" title="问题&amp;解决方案"></a>问题&amp;解决方案</h3><p>1、使用npm命令安装Hexo，输入：<code>npm install -g hexo-cli</code>报错，可能是权限不够，前面加sudo即可<br>2、Hexo常用命令<br><code>npm install hexo -g #安装Hexo</code><br><code>npm update hexo -g #升级 </code><br><code>hexo init #初始化博客</code><br>命令简写<br><code>hexo n &quot;我的博客&quot; == hexo new &quot;我的博客&quot; #新建文章</code><br><code>hexo g == hexo generate #生成</code><br><code>hexo s == hexo server #启动服务预览</code><br><code>hexo d == hexo deploy #部署</code><br><code>hexo server #Hexo会监视文件变动并自动更新，无须重启服务器</code><br><code>hexo clean #清除缓存，若是网页正常情况下可以忽略这条命令</code><br>3、github上传文件命令<br><code>$ git init //初始化本地仓库  </code><br><code>$ git add README.md   //添加README文档  </code><br><code>$ git commit -m &quot;你的注释....&quot;   //提交到本地仓库，并写一些注释  </code><br><code>$ git remote add origin git@github.com:yourname/xxxx.git  //连接远程仓库并建了一个名叫origin的别名</code><br><code>$ git push -u origin main                              //将本地仓库的文件提交到别名为origin的地址的main分支下，-u为第一次提交，需要创建master分支，下次就不需要了</code> </p>
+
+                
+            </div>
+        </article>
+    
+        <article class="post article-entry">
+            <div class="post-title">
+                <a class="post-title-link text-underline" href="/2022/09/23/gnn/">GNN阅读列表</a>
+            </div>
+            <p class="sub">Sep 23 2022</p>
+            <div class="post-content">
+                
+                    <h2 id="Paper-List"><a href="#Paper-List" class="headerlink" title="Paper List"></a>Paper List</h2><p>SEMI-SUPERVISED CLASSIFICATION WITH GRAPH CONVOLUTIONAL NETWORKS<br>simplifying graph convolutional networks<br>Predict then Propagate: Graph Neural Networks meet Personalized PageRank<br>Towards Deeper Graph Neural Networks<br>Representation Learning on Graphs with Jumping Knowledge Networks<br>Graph Attention Networks<br>how powerful are graph neural networks?</p>
+
+                
+            </div>
+        </article>
+    
+        <article class="post article-entry">
+            <div class="post-title">
                 <a class="post-title-link text-underline" href="/2022/05/23/as-unet/">AS-UNet</a>
             </div>
             <p class="sub">May 23 2022</p>
@@ -62,22 +94,6 @@
         <article class="post article-entry">
             <div class="post-title">
                 <a class="post-title-link text-underline" href="/2021/07/03/alzheimer/">Alzheimer’s Disease Classfication</a>
-            </div>
-            <p class="sub">Jul 03 2021</p>
-            <div class="post-content">
-                
-                    <p>《A Lightweight Spatial Attention Module with Adaptive Receptive Fields in 3D Convolutional Neural Network for Alzheimer’s Disease Classfication》<br>发表于《Springer Nature Switzerland AG》</p>
-<p><a target="_blank" rel="noopener" href="https://xueshu.baidu.com/usercenter/paper/show?paperid=1k4q0jv0s0750ex01q5d0ra0bk480396">pdf</a></p>
-<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>The development of deep learning provides powerful support for disease classification of neuroimaging data. However, in the classification of neuroimaging data based on deep learning methods, the spatial information cannot be fully utilized. In this paper, we propose a lightweight 3D spatial attention module with adaptive receptive fields, which allows neurons to adaptively adjust the receptive field size according to multiple scales of input information. The attention module can fuse spatial information of different scales on multiple branches, so that 3D spatial information of neuroimaging data can be fully utilized. A 3D-ResNet18 based on our proposed attention module is trained to diagnose Alzheimer’s disease (AD). Experiments are conducted on 521 subjects (254 of patients with AD and 267 of normal controls) from Alzheimer’s Disease National Initiative (ADNI) dataset of 3D structural MRI brain scans. Experimental results show the effectiveness and efficiency of our proposed approach for AD classification.</p>
-<h2 id="模型结构图"><a href="#模型结构图" class="headerlink" title="模型结构图"></a>模型结构图</h2><p><img src="/./img/al.png" alt="Image discription"></p>
-
-                
-            </div>
-        </article>
-    
-        <article class="post article-entry">
-            <div class="post-title">
-                <a class="post-title-link text-underline" href="/2021/07/03/blog/">Alzheimer’s Disease Classfication</a>
             </div>
             <p class="sub">Jul 03 2021</p>
             <div class="post-content">
@@ -125,7 +141,7 @@
         </div>
     <div class="tags">
     <h3 class="tags-title">Tags</h3>
-    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CV/" rel="tag">CV</a><span class="tag-list-count">4</span></li></ul>
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CV/" rel="tag">CV</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GNN/" rel="tag">GNN</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/" rel="tag">Blog</a><span class="tag-list-count">1</span></li></ul>
 </div>
     </div>
 </div>
