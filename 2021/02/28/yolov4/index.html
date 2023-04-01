@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<title>YOLOv4 | Qingqing Ge&#39;s Blogs</title>
+
+
+<link rel="stylesheet" href="/styles/main.css">
+
+
+    <meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Qingqing Ge's Blogs" type="application/atom+xml">
+</head>
+    <body>
+        <div class="container">
+            <header>
+<div class="main">
+<div class="title">
+    <a href="#" class="logo">Qingqing Ge&#39;s Blogs</a>
+</div>
+<div class="site-nav">
+    <ul id="menu" class="menu">
+    
+        <li class="menu-item text-underline">
+            <a href="/">Home</a>
+        </li>
+    
+        <li class="menu-item text-underline">
+            <a href="/archives">Archives</a>
+        </li>
+    
+        <li class="menu-item text-underline">
+            <a href="/about/">About</a>
+        </li>
+            
+    </ul>
+</div>
+</div>
+</header>
+            <main class="main">
+                <section class="posts clearfix">
+<div class="post-wrapper">
+    <article class="post article-entry">
+    <div class="post-title">
+        YOLOv4
+    </div>
+    <p class="sub">Feb 28 2021</p>
+    <div class="post-content">
+        <p>《融合环境特征与改进YOLOv4的安全帽佩戴检测方法》<br>发表于《中国图象图形学报》<br>荣获该学报2022年度优秀论文</p>
+<p><a target="_blank" rel="noopener" href="http://www.cjig.cn/html/jig/2021/12/20211213.htm">pdf</a></p>
+<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>目的 在施工现场，安全帽是最为常见和实用的个人防护用具，能够有效防止和减轻意外带来的头部伤害。但在施工现场的安全帽佩戴检测任务中，经常出现难以检测到小目标，或因为复杂多变的环境因素导致检测准确率降低等情况。针对这些问题，提出了一种融合环境特征与改进YOLOv4的安全帽佩戴检测方法以实现高效检测。方法 为补充丢失的特征，在保证感受野一致的情况下，将YOLOv4得到的三种不同大小的输出特征图与原图经过特征提取得到的特征图相加，从而将高层特征与低层特征融合，捕捉更多细节信息；对融合后的特征图采用3 x 3的卷积操作，以减小特征图融合后的混叠效应，保证特征稳定性，使得模型在大小目标检测上均能达到更高的准确率；同时，为适应施工现场的各种环境，采用多种数据增强方式进行环境模拟，并采用对抗训练方法增强模型的泛化能力和鲁棒性。结果 本文提出的改进YOLOv4方法在开源安全帽佩戴检测数据集（Safety Helmet Wearing Dataset, SHWD）上进行测试，mAP（Mean Average Precision）达到91.55%，recall达到98.62%。将该方法与CornerNet-Lite，Faster RCNN，YOLOv3，YOLOv4等安全帽佩戴检测算法进行对比，结果显示本文方法在mAP和recall上均有较大提升，其中相较于现有的YOLOv4算法，mAP和recall分别提高了5.2%和5.79%。并且，融合环境特征进行数据增强后，上述五种方法的mAP均有提高，提高2%～5%不等，其中本文提出的改进YOLOv4方法提高了4.27%，达到95.82%。此外，相较于数据增强前，改进YOLOv4在数据增强后的各种真实环境条件下进行测试时，都有较稳定的表现，检测准确率依然能保持在较高水平，其中对夜晚图片的检测效果提升尤其明显，mAP从67.73%提升至84.10%。结论 本文所提出的融合环境特征与改进YOLOv4的安全帽佩戴检测方法，以改进模型和数据增强的方式提升模型准确率、泛化能力和鲁棒性，为安全帽佩戴检测提供了有效保障。</p>
+<h2 id="模型结构图"><a href="#模型结构图" class="headerlink" title="模型结构图"></a>模型结构图</h2><p><img src="/./img/yolov4.png" alt="Image discription"></p>
+
+    </div>
+    </article>
+</div>
+
+    <div class="_toc">
+        <strong class="toc-title">
+        Contents
+        </strong>
+        <div class="toc-content">
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%91%98%E8%A6%81"><span class="toc-text">摘要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A8%A1%E5%9E%8B%E7%BB%93%E6%9E%84%E5%9B%BE"><span class="toc-text">模型结构图</span></a></li></ol>
+        </div>
+    </div>
+
+</section>
+
+
+    <nav class="post-nav">
+        
+            <div class="page-tags">
+                
+                    <a href="/tags/CV/">CV</a>
+                
+            </div>
+        
+    </nav>
+
+
+
+    <nav class="paginator clearfix">
+        
+            <a class="prev" href="/2021/07/03/blog/">
+                <i class="iconfont icon-left"></i>
+                <span class="prev-text">Alzheimer’s Disease Classfication</span>
+            </a>
+        
+        
+    </nav>
+
+
+            </main>
+            <div class="copyright">
+  <div class="text">Powered By
+    <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> | Theme <a target="_blank" rel="noopener" href="https://github.com/zjx137/hexo-theme-Tsu">Tsu</a> &copy 2019
+  </div>
+</div>
+
+        </div>
+    <div class="back-to-top" id="back-to-top">
+            <i class="iconfont icon-up"></i>
+    </div>
+        
+    </body>
+    
+<script src="/js/jquery-3.3.1.min.js"></script>
+
+    
+<script src="/js/back-to-top.js"></script>
+
+    
+<script src="/js/scroll.js"></script>
+
+    <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": { 
+        preferredFont: "TeX", 
+        availableFonts: ["STIX","TeX"], 
+        linebreaks: { automatic:true }, 
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) 
+    },
+    tex2jax: { 
+        inlineMath: [ ["$", "$"], ["\\(","\\)"] ], 
+        processEscapes: true, 
+        ignoreClass: "tex2jax_ignore|dno",
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {  
+        equationNumbers: { autoNumber: "AMS" },
+        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, 
+        Macros: { href: "{}" } 
+    },
+    messageStyle: "none"
+    }); 
+</script>
+<!-- 给MathJax元素添加has-jax class -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<!-- 通过连接CDN加载MathJax的js代码 -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+</html>
